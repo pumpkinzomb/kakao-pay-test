@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3f9e771fc67d6983a0272176c514e7d1",
+    "revision": "ca9fe31aeab87772552711d9e9220e0d",
     "url": "/kakao-pay-test/index.html"
   },
   {
-    "revision": "46e13d3a91951e7bd9d6",
+    "revision": "2fc32ccdcb3dc635a6c8",
     "url": "/kakao-pay-test/static/css/main.ae9fc3ca.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kakao-pay-test/static/js/2.58a14bc3.chunk.js"
   },
   {
-    "revision": "46e13d3a91951e7bd9d6",
-    "url": "/kakao-pay-test/static/js/main.f6f82d38.chunk.js"
+    "revision": "2fc32ccdcb3dc635a6c8",
+    "url": "/kakao-pay-test/static/js/main.bc30cae2.chunk.js"
   },
   {
     "revision": "8a257261f46c1ae130c4",
