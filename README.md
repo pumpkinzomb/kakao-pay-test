@@ -1,9 +1,8 @@
-#kakao-pay-test
+# kakao-pay-test
 
 ```
 yarn install
 yarn add node-sass react-router-dom
-
 ```
 
 RenderPage:
