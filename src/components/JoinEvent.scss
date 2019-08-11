@@ -1,0 +1,134 @@
+.JoinEvent {
+    position: relative;
+    background: rgba(0, 0, 0, .7);
+
+    @keyframes close-top {
+        0% {
+            transform: translateY(-200%);
+        }
+
+        30% {
+            transform: translateY(0);
+        }
+
+        35% {
+            transform: translateY(-30%);
+        }
+
+        45% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-5%);
+        }
+
+        53% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes close-bottom {
+        0% {
+            transform: translateY(200%);
+        }
+
+        30% {
+            transform: translateY(0);
+        }
+
+        35% {
+            transform: translateY(30%);
+        }
+
+        45% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(5%);
+        }
+
+        53% {
+            transform: translateY(0);
+        }
+    }
+
+    .contents-top {
+        line-height: 0;
+        animation-name: close-top;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-in;
+        animation-direction: initial;
+        display: none;
+
+        animation-play-state: paused;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 8%;
+            right: 8%;
+            width: 30px;
+        }
+    }
+
+    .contents-bottom {
+        line-height: 0;
+        animation-name: close-bottom;
+        animation-duration: 1.2s;
+        animation-timing-function: ease-in;
+        animation-direction: initial;
+        display: none;
+        animation-play-state: paused;
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            position: absolute;
+            z-index: 50;
+        }
+
+        .coupon-btn {
+            width: 16%;
+            height: 8%;
+            top: 9%;
+            right: 13%;
+        }
+
+        .update-btn {
+            width: 21.5%;
+            height: 7%;
+            top: 43.5%;
+            right: 18%;
+        }
+    }
+
+    .main-btn {
+        position: fixed;
+        width: 100%;
+        max-width: 750px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

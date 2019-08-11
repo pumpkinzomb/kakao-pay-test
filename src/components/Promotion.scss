@@ -1,0 +1,574 @@
+.Promotion {
+    position: relative;
+    overflow: hidden;
+
+    .topBar {
+        width: 100%;
+        height: 35px;
+        border-bottom: 1px solid #644b37;
+        background: rgba(34, 23, 14, .75);
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 500;
+
+        span img,
+        a img {
+            width: 100%;
+        }
+
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            width: 55px;
+        }
+
+        .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 88px;
+        }
+
+        .smtm {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 112px;
+            overflow: hidden;
+
+            img {
+                position: relative;
+                left: 15px;
+            }
+        }
+
+    }
+
+    @keyframes main-title-neon1 {
+
+        0%,
+        20%,
+        30%,
+            {
+            opacity: .8;
+        }
+
+        25%,
+        35%,
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+    @-webkit-keyframes main-title-neon1 {
+
+        0%,
+        20%,
+        30%,
+            {
+            opacity: .8;
+        }
+
+        25%,
+        35%,
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+    @keyframes main-title-neon2 {
+
+        0% {
+            opacity: .3;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+    }
+
+    @-webkit-keyframes main-title-neon2 {
+
+        0% {
+            opacity: .3;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+    }
+
+    @keyframes main-title-flame {
+
+        0%,
+        20%,
+        30%,
+            {
+            opacity: 0;
+        }
+
+        25%,
+        35%,
+        70% {
+            opacity: 1;
+        }
+
+    }
+
+    @-webkit-keyframes main-title-flame {
+
+        0%,
+        20%,
+        30%,
+            {
+            opacity: 0;
+        }
+
+        25%,
+        35%,
+        70% {
+            opacity: 1;
+        }
+
+    }
+
+    .mainTitle {
+        padding-top: 20px;
+        position: relative;
+
+        img {
+            width: 100%
+        }
+
+        .title-text1 {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            animation-name: main-title-neon1;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        .title-text2 {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            animation-name: main-title-neon1;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        .title-flame1 {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            animation-name: main-title-flame;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+
+        .title-flame2 {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            animation-name: main-title-flame;
+            animation-duration: 1.3s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-delay: .1s;
+            animation-iteration-count: infinite;
+        }
+
+        .title-flame3 {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            animation-name: main-title-flame;
+            animation-duration: 1.8s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-delay: .2s;
+            animation-iteration-count: infinite;
+        }
+
+        .title-flame4 {
+            position: absolute;
+            top: 20px;
+            left: 0;
+            animation-name: main-title-flame;
+            animation-duration: .7s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-delay: .3s;
+            animation-iteration-count: infinite;
+        }
+    }
+
+    @keyframes money-move {
+        50% {
+            transform: translateY(1%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @-webkit-keyframes money-move {
+        50% {
+            transform: translateY(1%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes money-text-move {
+        50% {
+            transform: scale(.9);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @-webkit-keyframes money-text-move {
+        50% {
+            transform: scale(.9);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes money-left-hand-move {
+        50% {
+            transform: rotate(-15deg);
+        }
+
+        100% {
+            transform: scale(10deg);
+        }
+    }
+
+    @-webkit-keyframes money-left-hand-move {
+        50% {
+            transform: rotate(-15deg);
+        }
+
+        100% {
+            transform: scale(10deg);
+        }
+    }
+
+    @keyframes money-right-hand-move {
+        50% {
+            transform: rotate(15deg);
+        }
+
+        100% {
+            transform: scale(-10deg);
+        }
+    }
+
+    @-webkit-keyframes money-right-hand-move {
+        50% {
+            transform: rotate(15deg);
+        }
+
+        100% {
+            transform: scale(-10deg);
+        }
+    }
+
+    .g-money {
+        position: relative;
+
+        .money-image {
+            animation-name: money-move;
+            animation-duration: .6s;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .money-title {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            span {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+
+            }
+
+            .text {
+                transform-origin: 50% 90%;
+                animation-name: money-text-move;
+                animation-duration: .55s;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+
+            .left-hand {
+                transform-origin: 20% 90%;
+                animation-name: money-left-hand-move;
+                animation-duration: .55s;
+                animation-timing-function: ease-in-out;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+
+            .right-hand {
+                transform-origin: 80% 90%;
+                animation-name: money-right-hand-move;
+                animation-duration: .55s;
+                animation-timing-function: ease-in-out;
+                animation-direction: i;
+                animation-iteration-count: infinite;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .reward-detail {
+        img {
+            width: 100%;
+        }
+    }
+
+    @keyframes neon-blinking {
+
+        0%,
+        20%,
+        30%,
+            {
+            opacity: 0;
+        }
+
+        25%,
+        35%,
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+    @-webkit-keyframes neon-blinking {
+
+        0%,
+        20%,
+        30%,
+            {
+            opacity: 0;
+        }
+
+        25%,
+        35%,
+        100% {
+            opacity: 1;
+        }
+
+    }
+
+    .sns-share {
+        position: relative;
+
+        &::before {
+            content: '';
+            background: url('/imgs/promotion/sns-share-neon-off.png') 0 0 no-repeat;
+            background-size: contain;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: .4;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .share-neon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation-name: neon-blinking;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-timing-function: ease;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            opacity: 0;
+        }
+
+        .share-link-btns {
+            width: 74%;
+            height: 40%;
+            position: absolute;
+            left: 13%;
+            top: 46%;
+
+            a {
+                display: block;
+                width: 25%;
+                height: 100%;
+                font-size: 0;
+                line-height: 0;
+                float: left;
+            }
+
+        }
+    }
+
+    .deco-coins {
+        line-height: 0;
+        padding-top: 25px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .banner {
+        line-height: 0;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .caution {
+        img {
+            width: 100%;
+        }
+    }
+
+    @keyframes coins-drop {
+
+
+        1% {
+            transform: translateY(-500%);
+            opacity: 1;
+        }
+
+        30%,
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes coins-drop {
+
+
+        1% {
+            transform: translateY(-500%);
+            opacity: 1;
+        }
+
+        30%,
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .coins {
+        img {
+            width: 100%;
+        }
+
+        span {
+            position: absolute;
+            left: 0;
+            transform: translateY(0%);
+            display: none;
+        }
+
+        .coin-01 {
+            top: 13%;
+            z-index: 1;
+            animation-name: coins-drop;
+            animation-duration: 1.7s;
+            animation-timing-function: ease-out;
+            animation-direction: initial;
+            animation-play-state: paused;
+        }
+
+        .coin-02 {
+            top: 21%;
+            z-index: 0;
+            animation-name: coins-drop;
+            animation-duration: 1.7s;
+            animation-timing-function: ease-out;
+            animation-delay: .1s;
+            animation-direction: initial;
+            animation-play-state: paused;
+        }
+
+        .coin-03 {
+            z-index: 2;
+            top: 30%;
+            animation-name: coins-drop;
+            animation-duration: 1.7s;
+            animation-timing-function: ease-in-out;
+            animation-delay: .2s;
+            animation-direction: initial;
+            animation-play-state: paused;
+        }
+    }
+
+    .enter-btn {
+
+        position: fixed;
+        width: 100%;
+        max-width: 750px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
