@@ -47,7 +47,7 @@ class JoinEvent extends Component {
           </Link>
         </div>
         <div className="main-btn">
-          <Link to="/">
+          <Link to={"/"}>
             <img
               src={process.env.PUBLIC_URL + "/imgs/joinevent/mainbutton.png"}
               alt="송금하기"

@@ -249,7 +249,7 @@ class Promotion extends Component {
         {/* 동전들 마침 */}
         {/* 참역하기 버튼 */}
         <div className="enter-btn">
-          <Link to="/joinEvent">
+          <Link to={"/joinEvent"}>
             <img
               src={
                 process.env.PUBLIC_URL + "/imgs/promotion/join-event-btn.png"

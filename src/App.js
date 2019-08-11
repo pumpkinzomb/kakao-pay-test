@@ -10,7 +10,7 @@ function App() {
   };
   return (
     <div className="App" style={bgImage}>
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <Switch>
           <Route path={"/"} exact component={Promotion} />
           <Route path={"/joinevent"} component={JoinEvent} />
