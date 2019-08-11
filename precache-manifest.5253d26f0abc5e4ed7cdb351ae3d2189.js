@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc1c8cf5a51d84beacbe129fbfffb14d",
+    "revision": "4476e3e7f194f474ec24759fb3efed6e",
     "url": "/kakao-pay-test/index.html"
   },
   {
-    "revision": "e5953de9bb4376f736b7",
-    "url": "/kakao-pay-test/static/css/main.2b4e2f1b.chunk.css"
+    "revision": "25331af7c06d26b5a552",
+    "url": "/kakao-pay-test/static/css/main.98650bb8.chunk.css"
   },
   {
     "revision": "d22fd66b3e7a5f1d9e5b",
     "url": "/kakao-pay-test/static/js/2.e7afa8d1.chunk.js"
   },
   {
-    "revision": "e5953de9bb4376f736b7",
+    "revision": "25331af7c06d26b5a552",
     "url": "/kakao-pay-test/static/js/main.310ef6a8.chunk.js"
   },
   {
