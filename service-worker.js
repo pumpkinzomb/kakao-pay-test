@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kakao-pay-test/precache-manifest.38310c66f104b3d525d6217a72a823d1.js"
+  "/kakao-pay-test/precache-manifest.3a1f3f04c040bffd8fe1b7958a47622a.js"
 );
 
 self.addEventListener('message', (event) => {
