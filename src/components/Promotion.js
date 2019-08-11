@@ -7,30 +7,34 @@ class Promotion extends Component {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
     this.startMotion = this.startMotion.bind(this);
+    this.moveCoins = this.moveCoins.bind(this);
     this.coins = null;
   }
   startMotion() {
     setTimeout(() => {
-      let allCoins = this.coins.childNodes;
+      let coins = this.coins;
+      coins.style.display = "block";
+      let allCoins = coins.childNodes;
       for (let i of allCoins) {
         i.style.animationPlayState = "running";
-        i.style.display = "block";
       }
     }, 500);
   }
-  handleScroll(e) {
+  moveCoins() {
     let scrollTop = window.pageYOffset;
     let clientHeight = window.innerHeight;
-    let scrollPosition = Math.floor((scrollTop / clientHeight) * 250);
-    if (this.coins !== null) {
-      let allCoins = this.coins.childNodes;
-      allCoins[0].style.transform = `translateY(-${scrollPosition}%)`;
-      allCoins[1].style.transform = `translateY(-${scrollPosition * 0.8}%)`;
-      allCoins[2].style.transform = `translateY(-${scrollPosition * 1.5}%)`;
-    }
+    let scrollPosition = Math.floor((scrollTop / clientHeight) * 100);
+    let allCoins = this.coins.childNodes;
+    allCoins[0].style.transform = `translateY(-${scrollPosition * 1.5}%)`;
+    allCoins[1].style.transform = `translateY(-${scrollPosition * 1}%)`;
+    allCoins[2].style.transform = `translateY(-${scrollPosition * 2}%)`;
+  }
+  handleScroll(e) {
+    this.moveCoins();
   }
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+    this.moveCoins();
   }
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);

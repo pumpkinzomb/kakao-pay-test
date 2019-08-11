@@ -391,10 +391,11 @@
 
     @keyframes coins-drop {
         0% {
-            transform: translateY(-500%);
+            transform: translateY(-350%);
         }
 
-        30% {
+        30%,
+        100% {
             transform: translateY(0);
         }
     }
@@ -408,24 +409,24 @@
             position: absolute;
             left: 0;
             transform: translateY(0%);
-            display: none;
         }
 
         .coin-01 {
             top: 13%;
             z-index: 1;
             animation-name: coins-drop;
-            animation-duration: 1.2s;
+            animation-duration: 1s;
             animation-timing-function: ease-out;
             animation-direction: initial;
             animation-play-state: paused;
+
         }
 
         .coin-02 {
             top: 21%;
             z-index: 0;
             animation-name: coins-drop;
-            animation-duration: 1.4s;
+            animation-duration: 1.3s;
             animation-timing-function: ease-out;
             animation-direction: initial;
             animation-play-state: paused;
@@ -435,7 +436,7 @@
             z-index: 2;
             top: 30%;
             animation-name: coins-drop;
-            animation-duration: 1.6s;
+            animation-duration: 1.5s;
             animation-timing-function: ease-in-out;
             animation-direction: initial;
             animation-play-state: paused;

@@ -6,7 +6,7 @@ import "./css/App.css";
 
 function App() {
   const bgImage = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/imgs/bg.png)`
+    backgroundImage: `url(${process.env.PUBLIC_URL}/imgs/bg.jpg)`
   };
   return (
     <div className="App" style={bgImage}>
