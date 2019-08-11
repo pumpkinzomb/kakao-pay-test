@@ -66,23 +66,6 @@
 
     }
 
-    @-webkit-keyframes main-title-neon1 {
-
-        0%,
-        20%,
-        30%,
-            {
-            opacity: .8;
-        }
-
-        25%,
-        35%,
-        100% {
-            opacity: 1;
-        }
-
-    }
-
     @keyframes main-title-neon2 {
 
         0% {
@@ -95,17 +78,6 @@
 
     }
 
-    @-webkit-keyframes main-title-neon2 {
-
-        0% {
-            opacity: .3;
-        }
-
-        50% {
-            opacity: 1;
-        }
-
-    }
 
     @keyframes main-title-flame {
 
@@ -124,22 +96,7 @@
 
     }
 
-    @-webkit-keyframes main-title-flame {
 
-        0%,
-        20%,
-        30%,
-            {
-            opacity: 0;
-        }
-
-        25%,
-        35%,
-        70% {
-            opacity: 1;
-        }
-
-    }
 
     .mainTitle {
         padding-top: 20px;
@@ -229,15 +186,7 @@
         }
     }
 
-    @-webkit-keyframes money-move {
-        50% {
-            transform: translateY(1%);
-        }
 
-        100% {
-            transform: translateY(0);
-        }
-    }
 
     @keyframes money-text-move {
         50% {
@@ -249,15 +198,7 @@
         }
     }
 
-    @-webkit-keyframes money-text-move {
-        50% {
-            transform: scale(.9);
-        }
 
-        100% {
-            transform: scale(1);
-        }
-    }
 
     @keyframes money-left-hand-move {
         50% {
@@ -269,15 +210,7 @@
         }
     }
 
-    @-webkit-keyframes money-left-hand-move {
-        50% {
-            transform: rotate(-15deg);
-        }
 
-        100% {
-            transform: scale(10deg);
-        }
-    }
 
     @keyframes money-right-hand-move {
         50% {
@@ -289,15 +222,7 @@
         }
     }
 
-    @-webkit-keyframes money-right-hand-move {
-        50% {
-            transform: rotate(15deg);
-        }
 
-        100% {
-            transform: scale(-10deg);
-        }
-    }
 
     .g-money {
         position: relative;
@@ -385,38 +310,24 @@
 
     }
 
-    @-webkit-keyframes neon-blinking {
 
-        0%,
-        20%,
-        30%,
-            {
-            opacity: 0;
-        }
-
-        25%,
-        35%,
-        100% {
-            opacity: 1;
-        }
-
-    }
 
     .sns-share {
         position: relative;
-
-        &::before {
-            content: '';
-            background: url('/imgs/promotion/sns-share-neon-off.png') 0 0 no-repeat;
-            background-size: contain;
-            display: block;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            opacity: .4;
-        }
+        background: url('/imgs/promotion/sns-share-neon-off.png') 0 0 no-repeat;
+        background-size: contain;
+        // &::before {
+        //     content: '';
+        //     background: url('/imgs/promotion/sns-share-neon-off.png') 0 0 no-repeat;
+        //     background-size: contain;
+        //     display: block;
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100%;
+        //     top: 0;
+        //     left: 0;
+        //     opacity: .4;
+        // }
 
         img {
             width: 100%;
@@ -479,32 +390,12 @@
     }
 
     @keyframes coins-drop {
-
-
-        1% {
+        0% {
             transform: translateY(-500%);
-            opacity: 1;
         }
 
-        30%,
-        100% {
+        30% {
             transform: translateY(0);
-            opacity: 1;
-        }
-    }
-
-    @-webkit-keyframes coins-drop {
-
-
-        1% {
-            transform: translateY(-500%);
-            opacity: 1;
-        }
-
-        30%,
-        100% {
-            transform: translateY(0);
-            opacity: 1;
         }
     }
 
@@ -524,7 +415,7 @@
             top: 13%;
             z-index: 1;
             animation-name: coins-drop;
-            animation-duration: 1.7s;
+            animation-duration: 1.2s;
             animation-timing-function: ease-out;
             animation-direction: initial;
             animation-play-state: paused;
@@ -534,9 +425,8 @@
             top: 21%;
             z-index: 0;
             animation-name: coins-drop;
-            animation-duration: 1.7s;
+            animation-duration: 1.4s;
             animation-timing-function: ease-out;
-            animation-delay: .1s;
             animation-direction: initial;
             animation-play-state: paused;
         }
@@ -545,9 +435,8 @@
             z-index: 2;
             top: 30%;
             animation-name: coins-drop;
-            animation-duration: 1.7s;
+            animation-duration: 1.6s;
             animation-timing-function: ease-in-out;
-            animation-delay: .2s;
             animation-direction: initial;
             animation-play-state: paused;
         }

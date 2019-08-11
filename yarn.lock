@@ -3080,6 +3080,11 @@ currently-unhandled@^0.4.1:
   dependencies:
     array-find-index "^1.0.1"
 
+cuuid@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/cuuid/-/cuuid-0.1.1.tgz#29b1e3e532054d69e95464e91615dcd877370329"
+  integrity sha1-KbHj5TIFTWnpVGTpFhXc2Hc3Ayk=
+
 cyclist@~0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-0.2.2.tgz#1b33792e11e914a2fd6d6ed6447464444e5fa640"
@@ -5898,6 +5903,11 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+jss-node@^0.6.3:
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/jss-node/-/jss-node-0.6.3.tgz#c4188c399d066ac2fef903051445361db5918b9a"
+  integrity sha1-xBiMOZ0GasL++QMFFEU2HbWRi5o=
+
 jsx-ast-utils@^2.0.1:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-2.1.0.tgz#0ee4e2c971fb9601c67b5641b71be80faecf0b36"
@@ -8269,6 +8279,14 @@ react-is@^16.8.1, react-is@^16.8.4:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
+
+react-pseudo@^1.0.16:
+  version "1.0.16"
+  resolved "https://registry.yarnpkg.com/react-pseudo/-/react-pseudo-1.0.16.tgz#3ea7e68a6a85a324a03ee89cfc9c091853508a0c"
+  integrity sha1-PqfmimqFoySgPuic/JwJGFNQigw=
+  dependencies:
+    cuuid "^0.1.1"
+    jss-node "^0.6.3"
 
 react-router-dom@^5.0.1:
   version "5.0.1"
